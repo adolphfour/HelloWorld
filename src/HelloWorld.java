@@ -16,6 +16,10 @@ public class HelloWorld {
         System.out.println("hello adolphfour");
         System.out.println("number : "+num);
 
+        double price1 = 5.6;
+        System.out.println("\nprice = "+price1);
+
+
 
 
 
