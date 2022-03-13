@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("hello adolphfour");
@@ -19,18 +21,23 @@ public class HelloWorld {
         double price1 = 5.6;
         System.out.println("\nprice = "+price1);
 
-        double Total =100.00;
-        double Vat =7.00;
-        double Grandtotal =107.00;
+        double total =9999.00;
+        double vat =0.07;
+        double grandtotal= total +(total*vat);
         String namee = "฿";
 
+        DecimalFormat df = new DecimalFormat("#,###.00");
+        String totalString = df.format(total);
+        String vatString = df.format(total*vat);
+        String grandTotalString = df.format(grandtotal);
 
-//        System.out.println("\nTotal "+Total+namee);
-        System.out.println("\nTotal "+Total+" ฿");
+
+//        System.out.println("\ntotal "+total+namee);
+        System.out.println("\ntotal "+ totalString +" ฿");
 //        System.out.printf(namee+"\n");
 
-        System.out.println("Vat7% "+Vat+" ฿");
-        System.out.println("Grand total "+Grandtotal+" ฿");
+        System.out.println("Vat7% "+vatString+" ฿");
+        System.out.println("Grand total "+grandTotalString+" ฿");
 
 
 
